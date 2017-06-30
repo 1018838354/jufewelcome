@@ -1,6 +1,15 @@
 .space-content{
 	background: #f9f9f9;
 }
+/** wxss **/
+/** 修改默认的navigator点击态 **/
+.navigator-hover {
+    color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color:red;
+}
 .space-top,.space-block{
 	padding: 20rpx;
 	background: #fff;
@@ -100,3 +109,6 @@
 	text-indent: 2em;
 	margin-top: 20rpx;
 }
+
+.show{display:block;}
+.hidden{display:none;}

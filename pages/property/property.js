@@ -54,6 +54,21 @@ Page({
       ]
     })
   },
+  questionSubmit: function () {
+    wx.showToast({
+      title: '提交成功',
+      icon: 'success',
+      image: '',
+      duration: 0,
+      mask: true,
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    });
+    setTimeout(function () {
+      wx.navigateBack();
+    }, 1300)
+  },
   onSelectTag: function(e){
     const eid = e.currentTarget.dataset.id;
     const selected = this.data.selected;

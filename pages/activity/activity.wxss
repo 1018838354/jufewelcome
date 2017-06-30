@@ -1,4 +1,3 @@
-@import '../conference/conference.wxss';
 
 .activity-item-info{
     justify-content: space-between;

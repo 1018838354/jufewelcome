@@ -1,56 +1,66 @@
+// pages/myconferencelist/myconferencelist.js
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    reservelist:[]
+  
   },
-  onLoad: function () {
-    this.fetchData();
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+  
   },
-  fetchData:function(){
-    this.setData({
-      reservelist:[
-        {
-          "id": 1,
-          "name": "张江第一会议室",
-          "time": "2016/08/25 13:00",
-          "reserver": "张先生",
-          "imgurl": "http://pic.58pic.com/58pic/12/34/51/85d58PICkjf.jpg"
-        },
-        {
-          "id": 2,
-          "name": "方糖小镇会议室",
-          "time": "2016/08/25 13:00",
-          "reserver": "张先生",
-          "imgurl": "http://pic.58pic.com/58pic/12/34/51/85d58PICkjf.jpg"
-        },
-        {
-          "id": 3,
-          "name": "盛大研发中心会议室",
-          "time": "2016/08/25 13:00",
-          "reserver": "张先生",
-          "imgurl": "http://pic.58pic.com/58pic/12/34/51/85d58PICkjf.jpg"
-        },
-        {
-          "id": 4,
-          "name": "科创中心会议室",
-          "time": "2016/08/25 13:00",
-          "reserver": "张先生",
-          "imgurl": "http://pic.58pic.com/58pic/12/34/51/85d58PICkjf.jpg"
-        },
-        {
-          "id": 5,
-          "name": "长三角创业会会议室",
-          "time": "2016/08/25 13:00",
-          "reserver": "张先生",
-          "imgurl": "http://pic.58pic.com/58pic/12/34/51/85d58PICkjf.jpg"
-        },
-        {
-          "id": 6,
-          "name": "长阳谷优客工场会议室",
-          "time": "2016/08/25 13:00",
-          "reserver": "张先生",
-          "imgurl": "http://pic.58pic.com/58pic/12/34/51/85d58PICkjf.jpg"
-        }
-      ]
-    })
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+  
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+  
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+  
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+  
   }
 })

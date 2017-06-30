@@ -17,20 +17,20 @@
 	  	  </view>
 	  	</view>
   	  <view class="space-info">
-  	  	<view class="space-title">{{spacedata.ParkName}}</view>
+  	  	<view class="space-title">软件与通信学院</view>
   	  	<view class="space-tags">
   	  		<text wx:for="{{spacedata.TagIDs}}" wx:key="*this">{{item}}</text>
   	  	</view>
   	  	<view class="space-list">
   	  		<view class="space-item">
-  	  			<text class="text-left">收费标准：</text>
+  	  			<text class="text-left">占地面积：</text>
   	  			<text class="text-right">
   	  				<text class="text-orange">{{spacedata.FeeScale}}</text>{{spacedata.FeeScaleRoomUnit}}
   	  			</text>
   	  		</view>
   	  		<view class="space-item">
-  	  			<text class="text-left">可租面积：</text>
-  	  			<text class="text-right">{{spacedata.FeeScaleRoomUnitValue}}㎡</text>
+  	  			<text class="text-left">专业数：</text>
+  	  			<text class="text-right">{{spacedata.FeeScaleRoomUnitValue}}个</text>
   	  		</view>
   	  		<view class="space-item">
   	  			<text class="text-left">地理位置：</text>
@@ -45,34 +45,49 @@
 	  		<view class="space-list">
 	  			<view class="space-item">
 	  				<text class="text-left">总建筑面积：</text>
-	  				<text class="text-right">{{spacedata.TotalBulidingArea}}㎡</text>
+	  				<text class="text-right">{{spacedata.TotalBulidingArea}}</text>
 	  			</view>
 	  			<view class="space-item">
-	  				<text class="text-left">得房率：</text>
+	  				<text class="text-left">绿化率：</text>
 	  				<text class="text-right">{{spacedata.RoomRate}}%</text>
 	  			</view>
 	  			<view class="space-item">
-	  				<text class="text-left">总工位：</text>
-	  				<text class="text-right">{{spacedata.TotalWorkstation}}个</text>
+	  				<text class="text-left">院长：</text>
+	  				<text class="text-right">关爱浩</text>
 	  			</view>
 	  			<view class="space-item">
-	  				<text class="text-left">总的独立办公室：</text>
-	  				<text class="text-right">{{spacedata.TotalRoom}}个</text>
+	  				<text class="text-left"></text>
+	  				<text class="text-right"></text>
 	  			</view>
 	  		</view>
 	  		<view class="space-passage">{{spacedata.Summary}}</view>
 	  	</view>
 	  </view>
-	  <view class="space-block">
-	  	<view class="space-block-title">优惠政策</view>
+	  <view class="space-block" >
+	  	<view class="space-block-title">学院概述</view>
 	  	<view class="space-block-content">
-	  		<view class="space-passage">{{spacedata.Policy}}</view>
+	  		<view class="space-passage">江西财经大学软件与通信工程学院现有软件工程、网络工程、电子工程、通信工程和物联网工程等五个本科专业，软件工程、教育技术学2个学术型硕士点，电子与通信工程专业型硕士点。学院现有教职工65人，其中教师55人。教师中，具有博士学位的有35人，占比达64%，25%的教师有出国进修经历。在校本科生、研究生人数1650余人。</view>
 	  	</view>
   	</view>
-	</view>
-	<view class="container-footer">
-		<text>联系责任人</text>
-		<text bindtap="reserveHandle">预约看房</text>
-		<text class="apply-btn" bindtap="goApply">入驻申请</text>
-	</view>
+     
+  <view class="space-block {{showTab1?'hidden':'show'}}">
+    <view class="space-block-title">软件工程</view>
+    <view class="space-block-content">
+      <view class="space-passage">江西财经大学软件与通信工程学院培训中心是江财软件与通信工程学院的培训机构，是学院发挥自身优势为江西省经济建设服务的重要窗口，是江西省的信息专业人才的重要培养基地。培训中心依托江西财经大学软件与通信工程学院在教学管理、师资力量、科研力量、教学设施等方面的优势，拥有一批具有丰富教学经验和实践经验的专业师资队伍；课程设置结合了国内IT信息产业的实际需要，教学内容和方式不断改革和创新，管理科学、规范，办学效果突出。中心以其全面的培训内容，独特的课程设置，雄厚的师资及完善的服务深得学员的认同。该中心拥有良好的师资力量和充足的硬件设备，保证学员有一个良好的学习生活环境。</view>
+    </view>
+  </view>
+
+    <view class="space-block {{showTab?'hidden':'show'}}">
+    <view class="space-block-title">物联网</view>
+    <view class="space-block-content">
+      <view class="space-passage">物联网是以网络通信理论与技术、信息安全技术为主导,培养计算机技术与应用人才及科学研究的基地。网络与信息工程系承担着计算机学院各专业模拟电子技术基础、数字电路与数字逻辑、汇编语言程序设计、计算机组成原理、微型计算机接口技术、单片机原理与嵌入式系统、计算机控制与辨识系统、计算机系统结构、计算机网络、局域网络技术与组网工程、Internet技术及应用、网页设计与网站开发、CBuilder程序设计等课程的教学任务,同时还承担了全校工科院系各专业微机原理课程的教学任务，培养硕士研究生多名。</view>
+    </view>
+  </view>
+
+  <view class="container-footer">
+   <text bindtap="showTab">软件工程</text>
+   <text bindtap="showTab1">物联网</text>
+  </view>
 </view>
+</view>
+

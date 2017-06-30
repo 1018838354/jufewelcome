@@ -1,28 +1,28 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/space/space",
-    "pages/spacereserve/spacereserve",
-    "pages/service/service",
+    "pages/score/score",
     "pages/servicedetail/servicedetail",
-    "pages/conference/conference",
-    "pages/conferencedetail/conferencedetail",
-    "pages/resource/resource",
+    "pages/guide/guide",
     "pages/question/question",
     "pages/property/property",
     "pages/apply/apply",
     "pages/activity/activity",
     "pages/activitydetail/activitydetail",
     "pages/my/my",
-    "pages/myconferencelist/myconferencelist"
+    "pages/myconferencelist/myconferencelist",
+    "pages/map/map",
+    "pages/page10000/page10000",
+    "pages/page10006/page10006",
+    "pages/page10005/page10005"
   ],
-  "window":{
-    "backgroundTextStyle":"white",
+  "window": {
+    "backgroundTextStyle": "white",
     "navigationBarBackgroundColor": "#f7982a",
     "navigationBarTitleText": "江财软通新生帮",
     "navigationBarTextStyle": "white"
   },
-
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000

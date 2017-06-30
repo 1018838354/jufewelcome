@@ -28,34 +28,34 @@ Page({
         },
         {
           'icon':'./../../images/icon_03.png',
-          'text':'寝室条件',
-          'url':'service'
+          'text':'生活条件',
+          'url':'page10000'
         },
         {
           'icon':'./../../images/icon_05.png',
           'text':'分数排名',
-          'url':'conference'
+          'url':'score'
         },
         {
           'icon':'./../../images/icon_07.png',
-          'text':'常见问题',
-          'url':'resource'
+          'text':'新生报到',
+          'url':'guide'
         },
         {
           'icon':'./../../images/icon_09.png',
-          'text':'新生报到',
+          'text':'常见问题',
           'url':'question'
         },
         {
           'icon':'./../../images/icon_11.png',
-          'text':'军训介绍',
+          'text':'寝室报修',
           'url':'property'
         }
       ],
       imgUrls: [
         '../../images/banner_02.jpg',
-        'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-        'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+ '../../images/001.jpg',
+        '../../images/003.jpg'
       ]
     })
   },

@@ -1,5 +1,1 @@
-@import '../space/space.wxss';
-.halfwidth-item{
-	width: 50%;
-	display: inline-block;
-}
+/* pages/conferencedetail/conferencedetail.wxss */

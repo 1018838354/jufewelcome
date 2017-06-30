@@ -1,0 +1,121 @@
+<!--index.wxml-->  
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav"> ① </view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav"> ② </view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav"> ③ </view>  
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav"> ④ </view>  
+    <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav"> ⑤ </view>  
+</view>
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+    <!-- 我是哈哈 -->  
+    <swiper-item>  
+      <view class="header">
+<view class="header-title">第一步：找到自己的寝室</view>
+</view>
+
+<view class="detail">
+	<view class="content">
+		<view class="title">
+		生活
+		</view>
+		<view class="content">
+		<text>1.寝室共有：宁庐、祥庐、和庐、静庐。
+    2.如果您要购买生活用品，校园内的商业街上有多个生活超市，方便快捷。
+    3.熟悉自己的室友~
+
+    </text>
+		</view>
+	</view>
+  <button type="primary" size="default" bindtap="swichNext"> 下一步 </button>  
+</view>
+
+    </swiper-item>  
+    <!-- 我是呵呵 -->  
+    <swiper-item>  
+           <view class="header">
+<view class="header-title">第二步：签名报到</view>
+</view>
+
+<view class="detail">
+	<view class="content">
+		<view class="title">
+		签到
+		</view>
+		<view class="content">
+    <text>
+			1.首先找到学院的区域，再找自己的班级。
+      2.签名的地点在十二生肖广场
+      3.签到；和班助沟通，询问自己在新的学校不懂得地方
+      
+      </text>
+    </view>
+	</view>
+  <button type="primary" size="default" bindtap="swichNext"> 下一步 </button>  
+</view> 
+    </swiper-item>   
+    <swiper-item>  
+           <view class="header">
+<view class="header-title">第三步：领取一卡通</view>
+</view>
+
+<view class="detail">
+	<view class="content">
+		<view class="title">
+		领卡
+		</view>
+		<view class="content">
+    <text>
+			1.在图书馆一楼排队领取校园一卡通。
+       【提醒】一般人特别多，尽量早点去领取
+      2.购买生活方面的卡：洗澡卡、饮水卡。在宿舍楼阿姨那里，自备现金
+    </text>
+		</view>
+	</view>
+  <button type="primary" size="default" bindtap="swichNext"> 下一步 </button>  
+</view>
+    </swiper-item>  
+    <swiper-item>  
+           <view class="header">
+<view class="header-title">第四步：购买保险</view>
+</view>
+
+<view class="detail">
+	<view class="content">
+		<view class="title">
+		购买
+		</view>
+		<view class="content">
+			在和庐宿舍楼下面购买大学生保险
+    
+
+		</view>
+	</view>
+  <button type="primary" size="default" bindtap="swichNext"> 下一步 </button>  
+</view>
+    </swiper-item>  
+    <!-- 我是嘿嘿 -->  
+    <swiper-item>  
+            <view class="header">
+<view class="header-title">第五步：领取军训服装</view>
+</view>
+
+<view class="detail">
+	<view class="content">
+		<view class="title">
+		军训
+		</view>
+		<view class="content">
+    <text>
+			1.在静庐自助银行旁，排队领取自己的军训服装
+      
+      领取好之后，就可以回去好好休息啦……
+
+      </text>
+
+		</view>
+	</view>
+  <button type="primary" size="default" bindtap="swichFinish"> 完成 </button>  
+</view>
+    </swiper-item>  
+</swiper>  
